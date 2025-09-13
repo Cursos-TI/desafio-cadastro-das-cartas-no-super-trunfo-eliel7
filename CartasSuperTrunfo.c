@@ -28,7 +28,7 @@ int main() {
     fgets(cidade1, sizeof(cidade1), stdin);
     cidade1[strcspn(cidade1, "\n")] = '\0';
     printf("\nInforme a População da Carta 1: ");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
     printf("\nInforme a Área da Carta 1: ");
     scanf("%f", &area1);
     printf("\nInforme o PIB da Carta 1: ");
@@ -45,7 +45,7 @@ int main() {
     fgets(cidade2, sizeof(cidade1), stdin);
     cidade2[strcspn(cidade2, "\n")] = '\0';
     printf("\nInforme a População da Carta 2: ");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
     printf("\nInforme a Área da Carta 2: ");
     scanf("%f", &area2);
     printf("\nInforme o PIB da Carta 2: ");
@@ -73,7 +73,7 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
-    printf("População: %u\n", populacao1);
+    printf("População: %lu\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f Reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", ponto_turistico1);
@@ -86,7 +86,7 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
-    printf("População: %u\n", populacao2);
+    printf("População: %lu\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f Reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", ponto_turistico2);
@@ -100,9 +100,9 @@ int main() {
     printf("\nComparação de Cartas: \n");
 
     if (populacao1 > populacao2) {
-            printf("POPULAÇÃO: Carta 1 (%u) venceu!\n", populacao1);
+            printf("POPULAÇÃO: Carta 1 (%lu) venceu!\n", populacao1);
         } else {
-            printf("POPULAÇÃO: Carta 2 (%u) venceu!\n", populacao2);
+            printf("POPULAÇÃO: Carta 2 (%lu) venceu!\n", populacao2);
         }
     if (area1 > area2) {
             printf("ÁREA: Carta 1 (%.2fkm²) venceu!\n", area1);
